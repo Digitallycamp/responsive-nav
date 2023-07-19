@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    font-size: 18px;
+    font-family: 'Public Sans', sans-serif;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    background-color:hsl(0, 0%, 100%);
+    padding: 0 60px;
+
+}
+
+@media screen and (max-width: 768px){
+    nav {
+        padding: 0 16px;
+    }
+}
+.mobile-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:inherit;
+    align-items: center;
+   
+}
+.mobile-nav .hambuger {
+    display:none;
+}
+
+@media screen and (max-width: 768px){
+    .mobile-nav .hambuger {
+        display:block;
+        cursor:pointer;
+    }
+}
+
+.mobile-nav .link ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction: row;
+    gap:16px;
+}
+.mobile-nav .link ul li {
+    display: inline-block;
+}
+.mobile-nav .link ul li a{
+    text-decoration: none;
+    color: hsl(233, 8%, 62%);
+}
+
+.mobile-nav .link ul li a:hover{
+    color: hsl(220, 16%, 96%);
+}
+
+@media screen and (max-width: 768px){
+    .mobile-nav .link {
+        display: none;
+    }
+}
+.mobile-nav .nav_cta-btn button {
+    padding: 8px 16px;
+    border:none;
+    border-radius: 100px;
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%) , hsl(233, 26%, 24%));
+    color:hsl(0, 0%, 100%);
+    font-weight: 700;
+    cursor:pointer;
+}
+
+.mobile-nav .nav_cta-btn button:hover{
+    background-image: linear-gradient(to right, hsl(136, 65%, 45%) , hsl(233, 26%, 10%));
+}
+
+@media screen and (max-width: 768px){
+    .mobile-nav .nav_cta-btn button{
+        display:none;
+    }
+}
+
+.small-nav {
+    display: none;
+   
+
+}
+
+
+@media screen and (max-width: 768px){
+    .small-nav {
+        display: none;
+       
+      
+    }
+
+    .small-nav .sm_links ul {
+        list-style-type:none;
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+    }
+
+
+    .sm_cta-btn button {
+        padding: 8px 16px;
+        border:none;
+        border-radius: 100px;
+        background-image: linear-gradient(to right, hsl(136, 65%, 51%) , hsl(233, 26%, 24%));
+        color:hsl(0, 0%, 100%);
+        font-weight: 700;
+        cursor:pointer;
+    }
+    
+    .sm_cta-btn button:hover{
+        background-image: linear-gradient(to right, hsl(136, 65%, 45%) , hsl(233, 26%, 10%));
+    }
+    
+     .small-nav.toggle{
+       
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        background-color: #f6f6f6;
+        padding: 60px 0;
+        transition: ease-in 8s;
+
+    }
+} 
